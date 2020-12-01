@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <title>Demo</title>
+    </head>
+    <script>
+        // lv0
+        const person = {
+            name: 'Boson',
+            age: 20,
+            address: {
+                city: 'Chongqing',
+                area: 'Nanan'
+            }
+        }
+        const {name, age, address: {city, area}} = person;
+        // lv1   ?运算符   用了一些函数的简化
+        let FibNum = n => n == 0 || n == 1 ? 1 : FibNum(n - 1) + FibNum(n -2)
+        // lv2   就是课件里reduce的一个简化版本
+        let Sum = (...values) => values.reduce((pre, now) => pre + now)
+    </script>
+    <body>
+    </body>
+</html>
